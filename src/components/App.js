@@ -21,7 +21,7 @@ export default function App() {
       ) : (
         <p>No fields in the form</p>
       )}
-      <button onClick={handleClick}>Add Field</button>
+      <button className="add" onClick={handleClick}>Add Field</button>
     </div>
   );
 }
@@ -34,7 +34,7 @@ function FormField({ field, inputField, setInputField }) {
   return (
     <div>
       <input />
-      <button onClick={handleClick}>Delete</button>
+      <button className="delete" onClick={handleClick}>Delete</button>
     </div>
   );
 }
